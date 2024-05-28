@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>股票買賣推薦報表</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            background: linear-gradient(to right, #188cb6 0%, #24a3ca 100%);
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+            width: 80%;
+            min-height: 100vh;
+        }
+        .header {
+            color: #d84315;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .responsive-table {
+            overflow-x: auto;
+        }
+        table.highlight > tbody > tr {
+            transition: background-color .25s ease;
+        }
+        table.highlight > tbody > tr:hover {
+            background-color: #f2f2f2;
+        }
+        th {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        td, th {
+            padding: 15px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="header">股票買賣 - 推薦系統 </h2>
+        <h5 style="text-align: center;"> 使用技術指標輔助判斷，自我學習用途，不構成任何投資建議 ! </h5> <br>
+        <h5 style="text-align: center;">  每日14:00 - 15:00 更新當日收盤價格 </h5> <br>
+        <h5 style="text-align: center;"> 每日00:00 - 01:00 更新買賣訊號 </h5> <br>
+        <table class="highlight responsive-table">
+            <thead>
+                <tr>
+                    <th>股票</th>
+                    <th>是否買入</th>
+                    <th>是否賣出</th>
+                    <th>收盤價格</th>
+                    <th>詳細資訊</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 這裡使用 Jinja2 模板語言來迭代股票資料 -->
+                
+                <tr>
+                    <td>6230</td>
+                    <td>True</td>
+                    <td>False</td>
+                    <td>350.0</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=6230" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>3406</td>
+                    <td>True</td>
+                    <td>False</td>
+                    <td>516.0</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=3406" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>6442</td>
+                    <td>False</td>
+                    <td>True</td>
+                    <td>177.5</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=6442" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>6414</td>
+                    <td>False</td>
+                    <td>True</td>
+                    <td>338.5</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=6414" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>3583</td>
+                    <td>True</td>
+                    <td>False</td>
+                    <td>343.0</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=3583" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>4583</td>
+                    <td>True</td>
+                    <td>False</td>
+                    <td>295.5</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=4583" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>1587</td>
+                    <td>False</td>
+                    <td>True</td>
+                    <td>76.0999984741211</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=1587" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>6415</td>
+                    <td>False</td>
+                    <td>True</td>
+                    <td>477.0</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=6415" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>3443</td>
+                    <td>True</td>
+                    <td>False</td>
+                    <td>1500.0</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=3443" target="_blank">查看</a></td>
+                </tr>
+                
+                <tr>
+                    <td>6526</td>
+                    <td>True</td>
+                    <td>False</td>
+                    <td>757.0</td>
+                    <td><a href="https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=6526" target="_blank">查看</a></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
