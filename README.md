@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TW Stocker
 
 每天更新的台股歷史資料庫，計算技術指標，回測然後推薦股票。  
@@ -124,3 +125,7 @@ portfolio.plot().show()
 #### 結果
 ![image](./img/result_stat.png)
 ![image](./img/result_graph.png)
+=======
+# financial-project
+Final report on financial technology and intelligent trading
+>>>>>>> origin/main
