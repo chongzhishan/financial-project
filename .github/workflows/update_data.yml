@@ -26,8 +26,8 @@ jobs:
 
       - name: Commit and push if changes # 完成資料更新後，腳本檢查是否有資料變更
         run: | # 如果有，將變更提交到 Git 倉庫並推送到 GitHub
-          git config --global user.email "drose01rrr@gmail.com"
-          git config --global user.name "YIFUNLIN"
+          git config --global user.email "chongzhishan123@gmail.com"
+          git config --global user.name "chongzhishan"
           git add -A
           git commit -m "Automated data update" -a || echo "No changes to commit"
           git push
