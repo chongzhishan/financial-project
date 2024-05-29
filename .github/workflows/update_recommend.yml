@@ -1,4 +1,4 @@
-name: Update Data
+name: Update recommand Data
 
 on:
   schedule:
@@ -35,4 +35,5 @@ jobs:
           git config --global user.name "chongzhishan"
           git add -A
           git commit -m "Automated stock report update" -a || echo "No changes to commit"
-          git push
+          git push origin main
+
